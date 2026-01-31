@@ -1,6 +1,6 @@
 import sys
-from src.gale_shapely import parse_input, gale_shapely, write_out
-from src.verifier import verifier
+from gale_shapely import parse_input, gale_shapely, write_out
+from verifier import verifier
 
 args = sys.argv[1:]
 

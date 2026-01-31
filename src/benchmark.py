@@ -2,9 +2,9 @@ import random
 import time
 import os
 
-from src.gale_shapely import parse_input, gale_shapely, write_out
-from src.verifier import verifier
-from src.runtime_analysis import create_data_plot
+from gale_shapely import parse_input, gale_shapely, write_out
+from verifier import verifier
+from runtime_analysis import create_data_plot
 
 sizes = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 640, 768, 896, 1024, 1280, 1536, 1792, 2048]
 

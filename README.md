@@ -8,7 +8,7 @@ Dylan McGarry (UFID: 66318896)
 
 ## Input Format
 
-The input describes complete strict rankings.
+The input describes complete strict rankings. All preferences separated by spaces and on the same line in most-preferred to least-preferred order.
 ```
 n
 <hospital 1 preferences>
@@ -63,12 +63,12 @@ To run Gale-Shapely on an input file:
 ```
 python3 run.py -gs input.in
 ```
-This produces input.out in the current directory (same name with the extension removed).
-If you would like to run without an input file and put the input into the command line, it will write to output.out with you only needing to type the following:
+This produces input.out in the current directory (same name with the extension removed). This works based on relative path so if you want to test an input file that lives in the data direcotry the input.in parameter in the CLI would say data/[input.in]
+If you would like to run without an input file and put the input into the command line, you will input all the lines that input.in would have (with preferences separated by spaces) it will write to output.out with you only needing to type the following:
 ```
 python3 run.py -gs
 ```
-If you want to Gale-Shapley without an input file and verify the result, run
+If you want to run Gale-Shapley with an input file and verify the result, run
 ```
 python3 run.py -gs -v input.in
 ```
